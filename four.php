@@ -11,8 +11,7 @@ function printFibaNumbers(int $value)
     $fibaNumber = 0;
     $fibaNumbers = [0];
     
-    while ($fibaNumber < $value) 
-    {
+    while ($fibaNumber < $value) {
 
         $previous = $current;
         $current = $fibaNumber;
