@@ -20,7 +20,7 @@ function printFibaNumbers(int $value)
     }
     
     //нам надо последний элемент выкинуть из массива.
-    $fibaNumbers = array_slice($fibaNumbers,0,-1);
+    $fibaNumbers = array_slice($fibaNumbers, 0, -1);
     echo implode(', ', $fibaNumbers);
 }
 
