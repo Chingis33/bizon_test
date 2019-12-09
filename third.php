@@ -8,10 +8,8 @@
 function countOf(array $sourceArray) :int
 {
     $count = 0;
-    foreach ($sourceArray as $element)
-    {
-        if ($element % 15 == 0 )
-        {
+    foreach ($sourceArray as $element) {
+        if ($element % 15 == 0 ) {
             $count++;
         }
     }
@@ -25,8 +23,7 @@ var_dump(countOf($sourceArray));
 // Можно через анонимную функцию сделать.
 $countOfnumbers = 0;
 array_walk($sourceArray, function ($element) use (&$countOfnumbers) {
-    if ($element % 15 == 0 )
-    {
+    if ($element % 15 == 0 ) {
         $countOfnumbers++;
     }
 });
