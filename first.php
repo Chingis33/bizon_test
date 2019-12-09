@@ -11,20 +11,15 @@ function binarySearch(array $sourceArray, int $searchValue) :int
     $start = 0;
     $end = count($sourceArray) - 1;
 
-    while($start <= $end)
-    {
+    while ($start <= $end) {
         $index = floor(($start+ $end) / 2);
 
-        if($sourceArray[$index] == $searchValue)
-        {
+        if ($sourceArray[$index] == $searchValue) {
             return (int) $index;
         }
-        elseif($sourceArray[$index] > $searchValue)
-        {
+        if ($sourceArray[$index] > $searchValue) {
             $end = $index - 1;
-        }
-        else
-        {
+        }  else {
             $start = $index + 1;
         }
     }
