@@ -23,7 +23,6 @@ $sourceArray = [-100, -50, -10, -15, 30, 45];
 var_dump(countOf($sourceArray));
 
 // Можно через анонимную функцию сделать.
-
 $countOfnumbers = 0;
 array_walk($sourceArray, function ($element) use (&$countOfnumbers) {
     if ($element % 15 == 0 )
