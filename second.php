@@ -2,8 +2,8 @@
 
 /**
  * Функция по поиску количества суббот и воскресений между датами
- * @param string $startDate Упорядоченный по возрастанию массив целых чисел
- * @param string $endDate Искомая величина
+ * @param string $startDate
+ * @param string $endDate
  * @return string
  */
 function countWeekendDays(string $startDate, string $endDate) :string
