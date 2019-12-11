@@ -19,7 +19,7 @@ function countWeekendDays(string $startDate, string $endDate) :string
             $countOfSaturday++;
         }
         if (date('D', $i) == 'Sun') {
-            $countOfSundays;
+            $countOfSundays++;
         }
     }
     
